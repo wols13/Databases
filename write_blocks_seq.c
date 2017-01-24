@@ -5,6 +5,7 @@
 #include "write_blocks_seq.h"
 
 
+
 /*
  * Now it is time to implement a script in a scripting language of your choice (Python, bash),
  * which runs write_blocks_seq with different block size parameters, and outputs the processing
