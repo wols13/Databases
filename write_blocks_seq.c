@@ -27,8 +27,8 @@ void csv_to_records(const char * csv_path, long block_size){
 		line[strcspn(line, "\r\n")] = '\0';
 
 		/* Converting each csv line to struct Record instances */
-        records[block_index].uid1 = atoi(strtok(line, " "));
-        records[block_index].uid2 = atoi(strtok(NULL, " "));
+        records[block_index].uid1 = atoi(strtok(line, ","));
+        records[block_index].uid2 = atoi(strtok(NULL, ","));
         
         lines_read++;
         block_index++;
